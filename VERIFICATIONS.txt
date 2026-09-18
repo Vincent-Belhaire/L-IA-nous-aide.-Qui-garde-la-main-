@@ -1,0 +1,23 @@
+VERIFICATIONS — EDITION 5
+
+Effectué dans Chromium automatisé :
+- Exécution JavaScript : aucune erreur pendant les activités testées.
+- 24 activités d’entraînement : saisie, choix multiples, associations, validation et correction.
+- Indice : ouverture et conservation de son utilisation dans la session.
+- 8 situations de transfert : validation d’ensemble et résultat 8/8 avec les réponses attendues.
+- Bilan 24/24 et 8/8 : rendu à l’écran et impression A4 contrôlée sur une page.
+- Accueil, bilan et médiathèque à 390, 640, 800 et 1365 pixels : pas de débordement horizontal global.
+- Dossier Fiabilité à 680 pixels et texte 150 % : pas de débordement horizontal global.
+- Suppression de la barre de zoom, du mode accompagné, du bloc de référence du dossier 1 et de l’accès enseignant.
+- Absence de lecteur externe à l’ouverture ; absence d’iframe vers une page Lumni.
+- Trois copies MP4 : décodage et début de lecture contrôlés séparément dans un lecteur HTML5, à partir des mêmes octets (Germain 122,405 s ; environnement 179,026 s ; création 213,020 s).
+- Serveur local : réponse HTTP 200 sur index.html et présence de la politique Referrer-Policy attendue. L’écoute est limitée à 127.0.0.1.
+
+Limites des tests :
+- La navigation du navigateur de test vers les adresses locales était bloquée par l’environnement d’exécution. Les tests de l’application ont été effectués en chargeant son contenu directement dans le navigateur.
+- La lecture des trois vidéos via l’interface complète du gros HTML autonome n’a pas pu être vérifiée de bout en bout dans cet environnement. Leur décodage séparé a été vérifié.
+- Aucun flux YouTube n’a été lu ici. Les identifiants sont ceux des publications retrouvées ou fournies ; cela ne prouve pas une autorisation de lecture dans tous les réseaux.
+- Aucun visionnage intégral des vidéos n’est certifié.
+- Firefox, ses réglages de confidentialité, l’impression réelle et le filtrage du réseau du collège restent à vérifier sur les postes utilisés.
+
+Le test ne constitue ni une certification d’accessibilité ni une certification juridique.
